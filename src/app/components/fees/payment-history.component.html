@@ -1,0 +1,11 @@
+<div class="payments container">
+  <div class="card">
+    <h2>Payment History</h2>
+    <table class="history">
+      <thead><tr><th>ID</th><th>Student</th><th>Amount</th><th>Date</th><th>Method</th></tr></thead>
+      <tbody>
+        <tr *ngFor="let r of records"><td>{{ r.id }}</td><td>{{ r.student }}</td><td>{{ r.amount }}</td><td>{{ r.date }}</td><td>{{ r.method }}</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>

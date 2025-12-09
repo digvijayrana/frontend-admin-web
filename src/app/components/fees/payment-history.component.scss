@@ -1,0 +1,6 @@
+.payments.container { padding:12px }
+.payments .card { padding:12px; border-radius:8px; background:#fff; box-shadow:0 8px 20px rgba(10,12,20,0.04) }
+.history { width:100%; border-collapse:collapse }
+.history th, .history td { padding:8px; border:1px solid rgba(0,0,0,0.06) }
+
+@media (max-width:640px) { .payments .card { overflow:auto } }

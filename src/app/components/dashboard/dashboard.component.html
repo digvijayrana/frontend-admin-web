@@ -1,0 +1,21 @@
+<div class="dashboard-root">
+  <div class="cards">
+    <div class="card">
+      <h3>New Admissions</h3>
+      <div class="value">{{ newAdmissions }}</div>
+    </div>
+    <div class="card">
+      <h3>Revenue (this month)</h3>
+      <div class="value">₹ {{ revenueThisMonth | number }}</div>
+    </div>
+    <div class="card">
+      <h3>Open Issues</h3>
+      <div class="value">{{ openIssues }}</div>
+    </div>
+  </div>
+
+  <section class="charts">
+    <div class="chart">(Charts will go here — Chart.js integration planned)</div>
+    <div class="chart">(Revenue trend placeholder)</div>
+  </section>
+</div>

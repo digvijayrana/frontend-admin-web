@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#A78BFA" />
+    </linearGradient>
+    <filter id="blurf"><feGaussianBlur stdDeviation="60" /></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grad)" />
+  <g filter="url(#blurf)" opacity="0.18">
+    <circle cx="220" cy="160" r="200" fill="#fff" />
+    <circle cx="980" cy="120" r="180" fill="#fff" />
+    <ellipse cx="900" cy="680" rx="320" ry="120" fill="#000" />
+  </g>
+  <g opacity="0.06" fill="#fff">
+    <rect x="80" y="80" width="260" height="260" rx="32" />
+    <rect x="820" y="260" width="240" height="140" rx="20" />
+  </g>
+</svg>

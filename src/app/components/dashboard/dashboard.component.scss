@@ -1,0 +1,78 @@
+.dashboard-root { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 1.25rem;
+}
+
+.cards { 
+  display: flex; 
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card { 
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.25rem; 
+  border-radius: 12px; 
+  box-shadow: 0 8px 24px rgba(20, 20, 60, 0.08);
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid rgba(99, 102, 241, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 32px rgba(20, 20, 60, 0.12);
+  transform: translateY(-2px);
+}
+
+.card h3 { 
+  margin: 0; 
+  font-size: 0.95rem; 
+  color: #475569;
+  font-weight: 500;
+}
+
+.card .value { 
+  font-size: 1.8rem; 
+  font-weight: 700; 
+  margin-top: 0.75rem;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.charts { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 1rem;
+}
+
+.chart { 
+  min-height: 220px; 
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  color: #94a3b8;
+  box-shadow: 0 8px 24px rgba(20, 20, 60, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.06);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1;
+    min-width: auto;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+  }
+}

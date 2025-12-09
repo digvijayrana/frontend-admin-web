@@ -1,0 +1,12 @@
+<div class="student-details container">
+  <a routerLink="/students">← Back to students</a>
+  <div *ngIf="student; else noStudent" class="card">
+    <h2>{{ student.firstName }} {{ student.lastName }}</h2>
+    <p><strong>Admission No:</strong> {{ student.admissionNumber }}</p>
+    <p><strong>Class:</strong> {{ student.class }} - <strong>Section:</strong> {{ student.section }}</p>
+    <p><strong>DOB:</strong> {{ student.dob }}</p>
+  </div>
+  <ng-template #noStudent>
+    <div class="card">Student not found.</div>
+  </ng-template>
+</div>

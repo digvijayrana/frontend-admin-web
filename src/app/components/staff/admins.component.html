@@ -1,0 +1,12 @@
+<div class="staff-section container">
+  <div class="header">
+    <h2>Admins</h2>
+    <div class="controls">
+      <input class="ctrl" placeholder="Name" [(ngModel)]="model.name" />
+      <input class="ctrl" placeholder="Email" [(ngModel)]="model.email" />
+      <button class="btn" (click)="add()" [disabled]="adding">Add</button>
+    </div>
+  </div>
+
+  <!-- Admins page intentionally shows only the add form by default for quick entry -->
+</div>

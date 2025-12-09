@@ -1,0 +1,15 @@
+<div class="payments container">
+  <div class="card">
+    <h2>Online Payments (Mock)</h2>
+    <div class="form">
+      <input placeholder="Student ID" [(ngModel)]="payment.studentId" />
+      <input type="number" placeholder="Amount" [(ngModel)]="payment.amount" />
+      <select [(ngModel)]="payment.method">
+        <option>Card</option>
+        <option>NetBanking</option>
+        <option>UPI</option>
+      </select>
+      <button (click)="pay()" [disabled]="submitting">Pay</button>
+    </div>
+  </div>
+</div>

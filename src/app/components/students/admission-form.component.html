@@ -1,0 +1,28 @@
+<div class="admission-root container">
+  <h2>New Admission</h2>
+  <form (ngSubmit)="submit()">
+    <label class="field">
+      <span>First name</span>
+      <input name="firstName" [(ngModel)]="model.firstName" required />
+    </label>
+    <label class="field">
+      <span>Last name</span>
+      <input name="lastName" [(ngModel)]="model.lastName" required />
+    </label>
+    <label class="field">
+      <span>Class</span>
+      <input name="class" [(ngModel)]="model.class" />
+    </label>
+    <label class="field">
+      <span>Section</span>
+      <input name="section" [(ngModel)]="model.section" />
+    </label>
+    <label class="field">
+      <span>Admission No</span>
+      <input name="admissionNumber" [(ngModel)]="model.admissionNumber" />
+    </label>
+    <div class="actions">
+      <button type="submit" [disabled]="saving">{{ saving ? 'Saving…' : 'Admit Student' }}</button>
+    </div>
+  </form>
+</div>

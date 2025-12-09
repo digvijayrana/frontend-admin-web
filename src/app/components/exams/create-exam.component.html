@@ -1,0 +1,21 @@
+<div class="exam-create container">
+  <div class="card">
+    <h2>Create Exam</h2>
+    <div class="form">
+      <input placeholder="Exam name" [(ngModel)]="model.name" />
+      <input placeholder="Class (e.g., Grade 5)" [(ngModel)]="model.className" />
+      <input type="date" [(ngModel)]="model.date" />
+      <input type="number" [(ngModel)]="model.totalMarks" min="1" />
+      <div class="actions">
+        <button (click)="create()" [disabled]="creating">Create Exam</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="list card" *ngIf="exams.length">
+    <h3>Upcoming Exams</h3>
+    <ul>
+      <li *ngFor="let e of exams">{{ e.name }} — {{ e.className }} — {{ e.date }} ({{ e.totalMarks }} marks)</li>
+    </ul>
+  </div>
+</div>

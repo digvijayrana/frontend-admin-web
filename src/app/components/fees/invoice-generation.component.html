@@ -1,0 +1,16 @@
+<div class="invoice container">
+  <div class="card">
+    <h2>Invoice Generation</h2>
+    <div class="controls">
+      <input placeholder="Student ID" [(ngModel)]="studentId" />
+      <button (click)="generate()">Generate Invoice</button>
+    </div>
+  </div>
+
+  <div class="list card" *ngIf="invoices.length">
+    <h3>Invoices</h3>
+    <ul>
+      <li *ngFor="let i of invoices">{{ i.id }} — {{ i.studentId }} — {{ i.amount }} — {{ i.date }}</li>
+    </ul>
+  </div>
+</div>

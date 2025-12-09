@@ -1,0 +1,13 @@
+<div class="school-section container">
+  <div class="header" style="display:flex;justify-content:space-between;align-items:center">
+    <h2>Classes</h2>
+    <div>
+      <input placeholder="New class name" [(ngModel)]="model.name" />
+      <button (click)="add()" [disabled]="adding">Add</button>
+    </div>
+  </div>
+
+  <ul class="list">
+    <li *ngFor="let c of items">{{ c.name }}</li>
+  </ul>
+</div>

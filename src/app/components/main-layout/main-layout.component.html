@@ -1,0 +1,30 @@
+<div class="layout-root">
+  <aside class="sidebar">
+    <div class="brand">Vidhya Admin</div>
+    <nav>
+      <a routerLink="/">Dashboard</a>
+      <a routerLink="/school-config">School Config</a>
+      <a routerLink="/students">Students</a>
+      <a routerLink="/staff">Staff</a>
+      <a routerLink="/attendance">Attendance</a>
+      <a routerLink="/exams">Exams</a>
+      <a routerLink="/fees">Fees & Finance</a>
+      <a routerLink="/transport">Transport</a>
+      <a routerLink="/library">Library</a>
+      <a routerLink="/hostel">Hostel</a>
+      <a routerLink="/notifications">Notifications</a>
+    </nav>
+  </aside>
+  <section class="main">
+    <header class="topbar">
+      <div class="left">Dashboard</div>
+      <div class="right">
+        <button (click)="logout()">Logout</button>
+      </div>
+    </header>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+</div>

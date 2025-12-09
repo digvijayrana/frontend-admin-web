@@ -1,0 +1,7 @@
+.invoice.container { padding:12px }
+.invoice .card { padding:12px; border-radius:8px; background:#fff; box-shadow:0 8px 20px rgba(10,12,20,0.04) }
+.invoice .controls { display:flex; gap:8px; align-items:center }
+.invoice input { padding:8px 10px; border-radius:6px; border:1px solid #e6e9f0 }
+.invoice .list ul { margin:0; padding-left:16px }
+
+@media (max-width:640px) { .invoice .controls { flex-direction:column; align-items:stretch } }

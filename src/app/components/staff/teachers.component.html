@@ -1,0 +1,19 @@
+<div class="staff-section container">
+  <div class="header">
+    <h2>Teachers</h2>
+    <div class="controls">
+      <input class="ctrl" placeholder="Name" [(ngModel)]="model.name" />
+      <input class="ctrl" placeholder="Subject" [(ngModel)]="model.subject" />
+      <button class="btn" (click)="add()" [disabled]="adding">Add</button>
+    </div>
+  </div>
+
+  <ul class="list">
+    <li *ngFor="let t of items">
+      <div>
+        <div class="name">{{ t.name }}</div>
+        <div class="meta">{{ t.subject }}</div>
+      </div>
+    </li>
+  </ul>
+</div>

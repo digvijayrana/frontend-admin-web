@@ -1,0 +1,10 @@
+.marks-entry.container { padding:12px }
+.marks-entry .card { padding:12px; border-radius:8px; background:#fff; box-shadow:0 10px 24px rgba(10,12,20,0.04) }
+.marks-entry .controls { display:flex; gap:8px; align-items:center; margin-bottom:8px }
+.marks-entry input { padding:6px 8px; border-radius:6px; border:1px solid #e6e9f0 }
+.marks-table { width:100%; border-collapse:collapse }
+.marks-table th, .marks-table td { padding:8px; border:1px solid rgba(0,0,0,0.06) }
+
+@media (max-width:640px) {
+  .marks-entry .controls { flex-direction:column; align-items:stretch }
+}

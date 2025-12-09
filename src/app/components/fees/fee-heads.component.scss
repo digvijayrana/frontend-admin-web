@@ -1,0 +1,7 @@
+.fee-page.container { padding:12px; display:flex; gap:12px; flex-wrap:wrap }
+.fee-page .card { padding:12px; border-radius:8px; background:#fff; box-shadow:0 8px 20px rgba(10,12,20,0.04); flex:1 }
+.fee-page .form { display:flex; gap:8px; flex-wrap:wrap; align-items:center }
+.fee-page input { padding:8px 10px; border-radius:6px; border:1px solid #e6e9f0 }
+.fee-page button { padding:8px 12px; background:#007bff; color:#fff; border:none; border-radius:6px }
+
+@media (max-width:640px) { .fee-page { flex-direction:column } }

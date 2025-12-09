@@ -1,0 +1,18 @@
+<div class="fee-page container">
+  <div class="card">
+    <h2>Fee Heads</h2>
+    <div class="form">
+      <input placeholder="Head name" [(ngModel)]="model.name" />
+      <input placeholder="Code" [(ngModel)]="model.code" />
+      <input placeholder="Description" [(ngModel)]="model.description" />
+      <button (click)="add()" [disabled]="adding">Add Head</button>
+    </div>
+  </div>
+
+  <div class="list card" *ngIf="heads.length">
+    <h3>Existing Heads</h3>
+    <ul>
+      <li *ngFor="let h of heads">{{ h.name }} ({{ h.code }}) — {{ h.description }}</li>
+    </ul>
+  </div>
+</div>

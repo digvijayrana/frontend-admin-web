@@ -1,0 +1,19 @@
+<div class="attendance-page container">
+  <div class="header">
+    <h2>Monthly Attendance Summary</h2>
+    <div class="controls">
+      <input type="month" [(ngModel)]="month" />
+    </div>
+  </div>
+
+  <div class="summary">
+    <div class="card" *ngFor="let s of summary">
+      <div class="title">{{ s.class }}</div>
+      <div class="progress-wrap">
+        <div class="bar"><div class="fill" [style.width.%]="percent(s)"></div></div>
+        <div class="pct">{{ percent(s) }}% present</div>
+      </div>
+      <div class="meta">Present: <strong>{{ s.present }}</strong> · Absent: <strong>{{ s.absent }}</strong></div>
+    </div>
+  </div>
+</div>

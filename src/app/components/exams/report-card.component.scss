@@ -1,0 +1,11 @@
+.report-card.container { padding:12px }
+.report-card .card { padding:12px; border-radius:8px; background:#fff; box-shadow:0 10px 24px rgba(10,12,20,0.04) }
+.report-card .controls { display:flex; gap:8px; align-items:center; margin-bottom:12px }
+.report-card input { padding:8px 10px; border-radius:6px; border:1px solid #e6e9f0 }
+.preview table { width:100%; border-collapse:collapse }
+.preview th, .preview td { padding:8px; border:1px solid rgba(0,0,0,0.06) }
+.totals { margin-top:8px; font-weight:700 }
+
+@media (max-width:640px) {
+  .report-card .controls { flex-direction:column; align-items:stretch }
+}

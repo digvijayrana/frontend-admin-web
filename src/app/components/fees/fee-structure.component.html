@@ -1,0 +1,19 @@
+<div class="fee-page container">
+  <div class="card">
+    <h2>Fee Structure</h2>
+    <div class="controls">
+      <input placeholder="Class name" [(ngModel)]="className" />
+      <button (click)="addClass()" [disabled]="adding">Add Class Structure</button>
+    </div>
+  </div>
+
+  <div class="list card" *ngIf="structure.length">
+    <h3>Structures</h3>
+    <div *ngFor="let s of structure" class="structure">
+      <div class="class">{{ s.className }}</div>
+      <ul>
+        <li *ngFor="let it of s.items">{{ it.head }} — {{ it.amount }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

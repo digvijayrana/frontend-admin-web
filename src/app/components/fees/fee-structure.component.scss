@@ -1,0 +1,7 @@
+.fee-page.container { padding:12px; display:flex; gap:12px; flex-wrap:wrap }
+.fee-page .card { padding:12px; border-radius:8px; background:#fff; box-shadow:0 8px 20px rgba(10,12,20,0.04); flex:1 }
+.fee-page .controls { display:flex; gap:8px; align-items:center }
+.structure { margin-top:8px; padding:8px; border-top:1px dashed #eef2fb }
+.structure .class { font-weight:700; margin-bottom:6px }
+
+@media (max-width:640px) { .fee-page { flex-direction:column } }

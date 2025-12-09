@@ -1,0 +1,29 @@
+<div class="login-root">
+  <div class="login-card">
+      <div class="login-header">
+        <div class="brand-mark">V</div>
+        <div>
+          <div class="login-title">Vidhya Admin</div>
+          <div class="login-subtitle">Sign in to manage your school</div>
+        </div>
+      </div>
+
+      <form (ngSubmit)="submit()">
+      <label class="field">
+        <span>Username</span>
+        <input name="username" [(ngModel)]="credentials.username" required />
+      </label>
+
+      <label class="field">
+        <span>Password</span>
+        <input name="password" type="password" [(ngModel)]="credentials.password" required />
+      </label>
+
+      <div class="actions">
+        <button type="submit" [disabled]="loading">{{ loading ? 'Signing in…' : 'Sign in' }}</button>
+      </div>
+
+      <div class="error" *ngIf="error">{{ error }}</div>
+    </form>
+  </div>
+</div>

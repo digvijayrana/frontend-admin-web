@@ -1,0 +1,7 @@
+<div class="import-root container">
+  <h2>Import Students (CSV)</h2>
+  <p>CSV header should include: firstName,lastName,class,section,dob,admissionNumber</p>
+  <input type="file" accept=".csv" (change)="onFileChange($event)" />
+  <div *ngIf="fileName">Selected: {{ fileName }}</div>
+  <div class="message" *ngIf="message">{{ message }}</div>
+</div>

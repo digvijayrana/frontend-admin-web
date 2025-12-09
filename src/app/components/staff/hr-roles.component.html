@@ -1,0 +1,12 @@
+<div class="staff-section container">
+  <div class="header">
+    <h2>HR Roles</h2>
+    <div class="controls">
+      <input class="ctrl" placeholder="Role name" [(ngModel)]="model.name" />
+      <input class="ctrl" placeholder="Description" [(ngModel)]="model.description" />
+      <button class="btn" (click)="add()" [disabled]="adding">Add</button>
+    </div>
+  </div>
+
+  <!-- HR Roles page shows only the add form for quick role creation -->
+</div>

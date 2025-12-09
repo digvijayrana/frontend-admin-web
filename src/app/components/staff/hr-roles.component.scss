@@ -1,0 +1,21 @@
+
+.staff-section.container {
+  padding: 12px;
+}
+
+.staff-section .header { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap }
+.staff-section .controls { display:flex; gap:8px; align-items:center }
+.staff-section .controls .ctrl { padding:6px 8px; min-width:160px }
+.staff-section .controls .btn { padding:6px 12px }
+
+.list { list-style: none; padding: 0; margin-top: 12px; }
+.list li { padding: 8px; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.name { font-weight: 600 }
+.meta { font-size: 0.9rem; color: #666 }
+
+@media (max-width: 640px) {
+  .staff-section .controls { flex-direction: column; align-items: stretch }
+  .staff-section .controls .ctrl { width: 100%; min-width: 0 }
+  .staff-section .controls .btn { width: 100% }
+}
+

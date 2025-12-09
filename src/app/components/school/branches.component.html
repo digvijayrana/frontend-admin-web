@@ -1,0 +1,16 @@
+<div class="school-section container">
+  <div class="header" style="display:flex;justify-content:space-between;align-items:center">
+    <h2>Branches</h2>
+    <div>
+      <input placeholder="New branch name" [(ngModel)]="model.name" />
+      <button (click)="add()" [disabled]="adding">Add</button>
+    </div>
+  </div>
+
+  <ul class="list">
+    <li *ngFor="let b of branches">
+      <div class="name">{{ b.name }}</div>
+      <div class="meta">{{ b.address }}</div>
+    </li>
+  </ul>
+</div>

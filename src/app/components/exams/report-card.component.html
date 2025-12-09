@@ -1,0 +1,20 @@
+<div class="report-card container">
+  <div class="card">
+    <h2>Report Card Generator</h2>
+    <div class="controls">
+      <input placeholder="Student ID" [(ngModel)]="studentId" />
+      <button (click)="generate()">Generate</button>
+    </div>
+
+    <div *ngIf="generated" class="preview">
+      <h3>{{ generated.student.name }} ({{ generated.student.id }})</h3>
+      <table>
+        <thead><tr><th>Subject</th><th>Marks</th></tr></thead>
+        <tbody>
+          <tr *ngFor="let g of generated.grades"><td>{{ g.subject }}</td><td>{{ g.marks }}</td></tr>
+        </tbody>
+      </table>
+      <div class="totals">Total: <strong>{{ generated.total }}</strong> / {{ generated.max }}</div>
+    </div>
+  </div>
+</div>

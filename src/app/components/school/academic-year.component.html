@@ -1,0 +1,16 @@
+<div class="school-section container">
+  <div class="header" style="display:flex;justify-content:space-between;align-items:center">
+    <h2>Academic Years</h2>
+    <div>
+      <input placeholder="Year name e.g. 2026-2027" [(ngModel)]="model.name" />
+      <button (click)="add()" [disabled]="adding">Add</button>
+    </div>
+  </div>
+
+  <ul class="list">
+    <li *ngFor="let y of items">
+      <div class="name">{{ y.name }}</div>
+      <div class="meta">{{ y.startDate }} — {{ y.endDate }}</div>
+    </li>
+  </ul>
+</div>

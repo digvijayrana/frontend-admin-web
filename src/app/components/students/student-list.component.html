@@ -1,0 +1,24 @@
+<div class="students-root container">
+  <div class="header" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+    <h2>Students</h2>
+    <div>
+      <a class="btn" routerLink="/students/import">Import CSV</a>
+      <a class="btn btn-primary" routerLink="/students/new" style="margin-left:0.5rem">New Admission</a>
+    </div>
+  </div>
+
+  <table class="students-table">
+    <thead>
+      <tr><th>Admission No</th><th>Name</th><th>Class</th><th>Section</th><th></th></tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of students">
+        <td>{{ s.admissionNumber }}</td>
+        <td>{{ s.firstName }} {{ s.lastName }}</td>
+        <td>{{ s.class }}</td>
+        <td>{{ s.section }}</td>
+        <td><a routerLink="/students/{{s.id}}">Details</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

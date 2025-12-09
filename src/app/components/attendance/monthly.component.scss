@@ -1,0 +1,15 @@
+.attendance-page.container { padding: 12px }
+.attendance-page .header { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap }
+.summary { display:flex; gap:12px; margin-top:12px; flex-wrap:wrap }
+.card { padding:12px; border:1px solid rgba(0,0,0,0.06); border-radius:8px; min-width:160px; background:#fff; box-shadow:0 6px 16px rgba(12,14,20,0.03) }
+.title { font-weight:700; margin-bottom:8px }
+.progress-wrap { display:flex; align-items:center; gap:8px }
+.bar { background:#f1f4f9; width:140px; height:10px; border-radius:10px; overflow:hidden }
+.fill { background:linear-gradient(90deg,#28a745,#8fd19e); height:100% }
+.pct { font-weight:700; color:#333; min-width:48px }
+.meta { color:#666; margin-top:8px }
+
+@media (max-width:640px) {
+  .summary { flex-direction:column }
+}
+
